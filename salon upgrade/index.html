@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Royal Hair Salon | Your City</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --primary:#16a34a;
+  --dark:#0f172a;
+  --gray:#475569;
+  --light:#f8fafc;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height:1.6;
+}
+
+/* ===== HERO ===== */
+.hero{
+  background: linear-gradient(
+      rgba(0,0,0,.55),
+      rgba(0,0,0,.55)
+    ),
+    url("images/salon1.jpg") center/cover no-repeat;
+  color:white;
+  padding:100px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:20px;
+  opacity:.9;
+}
+
+.hero a{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 32px;
+  background:var(--primary);
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  border-radius:30px;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+section h2{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:50px;
+}
+
+/* ===== SERVICES ===== */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  overflow:hidden;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.card .content{
+  padding:20px;
+}
+
+.card h3{
+  margin:0;
+}
+
+.price{
+  color:var(--primary);
+  font-weight:bold;
+  font-size:18px;
+  margin-top:6px;
+}
+
+/* ===== GALLERY ===== */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(0,0,0,.1);
+}
+
+/* ===== CONTACT ===== */
+.contact{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:70px 20px;
+}
+
+.contact p{
+  font-size:18px;
+  opacity:.9;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero" style="
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9')
+center/cover no-repeat;">
+  <h1>Royal Hair Salon</h1>
+  <p>Premium Haircuts & Grooming Experience</p>
+  <a href="https://wa.me/91XXXXXXXXXX">Book Appointment</a>
+</div>
+
+<!-- SERVICES -->
+<section>
+<h2>Our Services</h2>
+<div class="services">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250">
+<div class="content">
+<h3>Haircut</h3>
+<div class="price">₹100</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a">
+<div class="content">
+<h3>Beard Styling</h3>
+<div class="price">₹80</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80
+">
+<div class="content">
+<h3>Facial & Cleanup</h3>
+<div class="price">₹300</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- GALLERY -->
+<section>
+<h2>Our Salon</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+<img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250">
+<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a">
+<img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?auto=format&fit=crop&w=1200&q=80
+"
+>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<div class="contact">
+  <h2>Visit Us</h2>
+  <p>
+    📍 Main Market, Your City<br>
+    🕘 9 AM – 9 PM (All Days)<br>
+    📞 WhatsApp: XXXXXXXX
+  </p>
+</div>
+
+<footer>
+  © 2026 Royal Hair Salon | Website by Ayush
+</footer>
+
+</body>
+</html>
